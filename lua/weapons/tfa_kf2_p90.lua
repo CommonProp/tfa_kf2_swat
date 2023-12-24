@@ -117,7 +117,6 @@ SWEP.InspectAng = Vector(15.036, 32.743, 4.546)
 --Shell eject override
 SWEP.MagModel = Model("models/weapons/tfa_kf2/p90/p90_mag.mdl")
 SWEP.ShellModel = "models/weapons/tfa_kf2/shared/p90_shell.mdl"
-SWEP.ShellScale = 1.2
 
 --[[ATTACHMENTS]]--
 SWEP.Attachments = {
