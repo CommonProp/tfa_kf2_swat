@@ -146,7 +146,7 @@ SWEP.EventTable = {
 		{time = 1, type = "sound", value = Sound("TFA_KF2.MP7.MagIn")},
 		{time = 1.6, type = "sound", value = Sound("TFA_KF2.MP7.SlideBack")},
 		{time = 1.7, type = "sound", value = Sound("TFA_KF2.MP7.SlideForward")},
-	},
+	}, 
 	["Bash"] = {
 		{time = 0.3, type = "sound", value = Sound("TFA_KF2.Generic.RifleRattle")},
 		{time = 0.4, type = "sound", value = Sound("TFA_KF2.Generic.Bash")},
