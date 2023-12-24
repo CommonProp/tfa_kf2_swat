@@ -3,8 +3,7 @@
     "$basetexture" "models\weapons\tfa_kf2\riotshield\Wep_1stp_Glass_D_with_mask_applied"
     "$bumpmap" "models\weapons\tfa_kf2\riotshield\Wep_1stp_Glass_N"
 
-    "$alphatest" "1"
-    "$allowalphatocoverage"	"1"
+    "$translucent" "1"
 
     "$Detail" "models\weapons\tfa_kf2\riotshield\Wep_1stp_Glass_R"
     "$Detailscale" "1"

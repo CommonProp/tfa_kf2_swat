@@ -80,6 +80,10 @@ SWEP.VMAng = Vector(0, 0, 0) --The viewmodel angular offset, constantly.   Subtr
 SWEP.CrouchPos = Vector(0, 3.94, -2.76) -- Defaults to nothing, use Vector(0, 0, 0) as starting point
 SWEP.CrouchAng = Vector(0, 0, 0) -- Defaults to nothing, use Vector(0, 0, 0) as starting point
 
+SWEP.VElements = { --to anyone reading this wondering how the glass renders correctly on top of the hands, translucent = true is the answer to your problems
+	["glass"] = { type = "Model", model = "models/weapons/tfa_kf2/riotshield/c_kf2_riotshield_glass.mdl", bone = "Root", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bonemerge = true, translucent = true, active = true, bodygroup = {} }
+}
+
 SWEP.ViewModelBoneMods = {
 	["valvebiped.bip01_l_upperarm"] = { scale = Vector(1, 1, 1), pos = Vector(5.794, 7.228, -0.569), angle = Angle(-8.054, -43.413, 0) }
 }
