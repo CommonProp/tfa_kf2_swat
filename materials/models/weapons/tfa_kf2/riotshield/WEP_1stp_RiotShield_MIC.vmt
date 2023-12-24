@@ -1,0 +1,38 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models\weapons\tfa_kf2\riotshield\WEP_1stp_RiotShield_RGB"
+    "$bumpmap" "models\weapons\tfa_kf2\riotshield\WEP_1stp_RiotShield_N"
+    "$phongexponenttexture" "models\weapons\tfa_kf2\riotshield\WEP_1stp_RiotShield_E"
+
+    /////////////////
+    "$color2" "[0.9 0.9 0.9]"                                   
+    "$blendtintbybasealpha" "1"                           
+    /////////////////
+
+    "$phong" "1"
+    "$phongboost" "1.5"
+    "$phongalbedotint" "1"
+    "$phongalbedoboost" "75"                                
+    "$phongfresnelranges" "[1 0.1 0]"
+
+    "$rimlight" "1"
+    "$rimlightexponent" "75"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+       
+    /////////////////
+    "$normalmapalphaenvmapmask" "1"                       
+    /////////////////
+
+    "$envmap" "models\weapons\tfa_kf2\envmaps\specularity_00"
+    "$envmaptint"            "[0.05 0.05 0.05]"
+    "$envmapmultiplier"     "0.3"   //toy around with this
+              Proxies
+    {
+        TFA_CubemapTint
+        {
+            resultvar    $envmaptint // Write final output to $envmaptint
+            multiplier    $envmapmultiplier  // Use our value for default envmap tint
+        }
+    }
+}

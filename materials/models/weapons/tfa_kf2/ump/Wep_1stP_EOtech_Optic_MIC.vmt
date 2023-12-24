@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "kf2\DetailBlack"
+    "$bumpmap" "models\weapons\tfa_kf2\ump\Wep_1stP_EOtech_Lens_N"
+
+    "$additive" "1"
+     "$alphatest" "1"
+
+    "$Detail" "models\weapons\tfa_kf2\ump\Wep_1stP_EOtech_Glass_Fingerprint"
+    "$Detailscale" "1"
+    "$Detailblendfactor" "0.05"
+    "$Detailblendmode" "1"
+
+    "$envmap" "models\weapons\tfa_kf2\envmaps\specularity_100"
+    "$envmaptint"            "[0.05 0.05 0.05]"
+    "$envmapmultiplier"     "0.25"
+              Proxies
+    {
+        TFA_CubemapTint
+        {
+            resultvar    $envmaptint // Write final output to $envmaptint
+            multiplier    $envmapmultiplier  // Use our value for default envmap tint
+        }
+    }
+}
