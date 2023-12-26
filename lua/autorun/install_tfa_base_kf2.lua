@@ -1,10 +1,10 @@
 local TFA_REQ_VERSION = 4.782
 local function checkForTFA()
 	if TFA and TFA_BASE_VERSION and TFA_BASE_VERSION >= TFA_REQ_VERSION then return end -- we're 100% good
-	if TFA then -- outdated base
+	if TFA and TFA_BASE_VERSION then -- outdated base
 		if CLIENT then
 			Derma_Query(
-				"You have an outdated, unofficial version of TFA Base installed. Get the official upload, or things WILL break!\nUninstall your outdated TFA Base install, then use the button below to install it.\nHelpful info has been printed into the console.\nDetected TFA Base version: ".. TFA_BASE_VERSION ..". Expected: ".. TFA_REQ_VERSION.." or higher.",
+				"You have an outdated, unofficial version of TFA Base installed. Get the official upload, or things WILL break!\nUninstall your outdated TFA Base install, then use the button below to install it.\nHelpful info has been printed into the console, including tips on how to find the outdated install.\nDetected TFA Base version: ".. TFA_BASE_VERSION ..". Expected: ".. TFA_REQ_VERSION.." or higher.",
 				"TFA KF2: Outdated TFA Base!!!",
 				"Workshop",
 				function() gui.OpenURL("http://steamcommunity.com/workshop/filedetails/?id=2840031720") end
@@ -19,7 +19,7 @@ local function checkForTFA()
 			print("Detected TFA Base version:", TFA_BASE_VERSION, "Expected:", TFA_REQ_VERSION)
 			print("####################################################")
 		end
-	else -- no tfa detected
+	else -- no tfa detected, or this is a *very* old version of tfa base
 		if CLIENT then
 			Derma_Query(
 				"The weapon(s) you have installed requires TFA Base. Use the button below to install it.",
